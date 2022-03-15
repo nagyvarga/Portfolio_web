@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, World!</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-menu">
+            <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn__burger"></div>
+            </div>
+        </nav>
+        <div class="hamburger">
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="burger-blur-layout"></div>
+        <h1>Roland Nagy-Varga,<span>Front-end developer</span></h1>
+    </header>
+    <section id="about">
+        <img src="image/nvr.png" alt="Picture from Roland Nagy-Varga">
+        <div>
+            <h2>About me</h2>
+            <p>Hi, I am Roland Nagy-Varga. I have been a junior front-end developer for 5 months now.
+                For me, programming is not just a job, it is a hobby.</p>
+            <p>I am open to new knowledge, I like to study new technologies and
+                apply them in practise.</p>
+            <p><strong>Skills: </strong>HTML, CSS, JS.</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="portfolio-all-container">
+            <div>
+                <img src="image/piano.png" alt="Virtual Piano project" title="Virtual Piano project">
+                <p>Flashcards</p>
+                <button data-target="#porfolio-pop-up1" class="open-window">More details</button>
+            </div>
+            <div>
+                <img src="image/flashcards.png" alt="Flashcards project" title="Flashcards project">
+                <p>Virtual Piano</p>
+                <button data-target="#porfolio-pop-up2" class="open-window">More details</button>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <footer>
+            <h2>Contacts</h2>
+            <p>You can contact me at mail@nagyvarga.hu or phone number - +36 (30) 123 4567</p>
+            <p>&copy; Roland Nagy-Varga, 2020</p>
+        </footer>
+    </section>
+    <div id="porfolio-pop-up1" class="window">
+        <h3>Flashcards</h3>
+        <p>You can see the project at the following link: <a target="_blank" href="#">flashcards</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with flip-down
+        flash cards, learned some HTML basics and learned that CSS can easily make beautiful design.</p>
+        <button data-close-button class="close-window">Close</button>
+    </div>
+    <div id="porfolio-pop-up2" class="window">
+        <h3>Virtual Piano</h3>
+        <p>You can see the project at the following link: <a target="_blank" href="#">virtual piano</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with virtual piano,
+            learned some HTML and CSS basics and learned that JavaScript is very important to make a dynamic web page.</p>
+        <button data-close-button class="close-window">Close</button>
+    </div>
+    <div id="backdrop_blur_overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
